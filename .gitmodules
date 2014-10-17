@@ -1,0 +1,3 @@
+[submodule "dataquality"]
+	path = dataquality
+	url = https://github.com/amnesty/dataquality.git
