@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fields Good!</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Highlight JS-->
+    <link href="css/highlight.min.css" rel="stylesheet">
+    <style>
+        pre, pre code, .hljs {
+            background: #3F3F3F;
+            font-family: monospace;
+        }    
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-edit"></span> Fields Good!</a>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#"><span class="glyphicon glyphicon-th"></span> Components</a>
+          </li>
+          <li><a href="https://github.com/amnesty/fields-good"><span class="glyphicon glyphicon-cog"></span> Source code</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <div class="container-fluid">
+      <div class="well well-lg">
+        <div class="form-group has-feedback">
+          <label class="control-label" for="iban">IBAN</label>
+          <input type="text" id="iban" class="form-control fg-iban"
+              placeholder="ES99 0000 0000 0000 0000 0000">
+          <span class="glyphicon form-control-feedback"></span>
+        </div>
+        
+        <span class="help-block">To add a IBAN field, just apply the class <code>fg-iban</code>.</span>
+
+        <pre><code class="hljs html">&lt;div class="form-group has-feedback"&gt;
+      &lt;label for="iban"&gt;IBAN&lt;/label&gt;
+      &lt;input id="iban" class="form-control fg-iban"
+          placeholder="ES99 0000 0000 0000 0000 0000"&gt;
+      &lt;span class="glyphicon form-control-feedback"&gt;&lt;/span&gt;
+  &lt;/div&gt;</code></pre>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Prettify for source code highlighting -->
+    <script src="js/highlight.min.js"></script>
+    
+    <!-- Amnesty International Spain's DataQuality functions -->
+    <script src="dataquality/bin/dataquality.js"></script>
+    <!-- Fields Good! magic -->
+    <script src="js/fields-good.js"></script>
+    
+    <!-- Prettify initialization -->
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>
